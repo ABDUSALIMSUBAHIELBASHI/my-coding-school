@@ -1,0 +1,113 @@
+
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+  color: hwb(0 0% 100%);
+  background-color: hsl(172, 72%, 35%);
+
+
+}
+body {
+  line-height: 1.6; color: lch(4.07% 0.63 324.39);
+}
+a { text-decoration: none; color: inherit; }
+
+
+header {
+  background: hwb(0 13% 87%);
+  color: lab(3.32% 2.6 0.91);
+  padding: 1rem 2rem;
+}
+.navbar {
+  display: flex; justify-content: space-between; align-items: center;
+}
+.logo span { color: #f39c12; }
+.nav-links {
+  list-style: none; display: flex; gap: 1.5rem;
+}
+.nav-links li a {
+  color: #fff; transition: color 0.3s;
+}
+.nav-links li a:hover { color: #f39c12; }
+.menu-toggle {
+  display: none; font-size: 2rem; cursor: pointer;
+}
+
+
+.hero {
+  display: flex; flex-wrap: wrap;
+  align-items: center; justify-content: space-around;
+  padding: 4rem 2rem;
+  background: #f4f4f4;
+}
+.hero-text { max-width: 500px; }
+.hero-text h1 { font-size: 2.2rem; margin-bottom: 1rem; }
+.hero-text span { color: #f39c12; }
+.hero-text p { margin-bottom: 1rem; }
+.hero .btn {
+  display: inline-block; background: #f39c12; color: #fff;
+  padding: 0.7rem 1.5rem; border-radius: 5px; transition: 0.3s;
+}
+.hero .btn:hover { background: #d35400; }
+.hero-img img {
+  max-width: 220px; border-radius: 50px;
+   box-shadow: 0 10px 20px rgba(15, 13, 13, 0.2);
+}
+
+
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.section h2 { margin-bottom: 2rem; font-size: 2rem; }
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  background: #fff; padding: 1.5rem; border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.card:hover { transform: translateY(-5px); }
+
+
+.skills-list {
+  list-style: none; display: flex; flex-wrap: wrap;
+  gap: 1rem; justify-content: center;
+}
+.skills-list li {
+  background: #f39c12; color: #fff; padding: 0.5rem 1rem;
+  border-radius: 20px; font-weight: bold;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+.gallery img {
+  width: 100%; border-radius: 100px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+form {
+  max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 1rem;
+}
+form input, form textarea {
+  padding: 0.8rem; border: 1px solid #ccc; border-radius: 5px;
+}
+form button {
+  background: #f39c12; color: #fff; border: none; padding: 0.8rem;
+  cursor: pointer; border-radius: 5px; transition: 0.3s;
+}
+form button:hover { background: #d35400; }
+
+
+@media (max-width: 768px) {
+
+}

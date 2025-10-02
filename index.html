@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Portfolio</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">My<span>Portfolio</span></div>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <ul class="nav-links" id="nav-links">
+        <fieldset> 
+        <legend>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+         </legend>
+         </fieldset>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section id="home" class="hero">
+    <fieldset> 
+    <legend> 
+    <div class="hero-text">
+      <h1>Hello, I'm <span>Abdu Salim</span></h1>
+      <p>Web Developer | Designer | Learner</p>
+      <a href="#portfolio" class="btn">View My Work</a>
+    </div>
+    <div class="hero-img">
+      <img src="b.jpeg" alt="Profile" width="200px" height="200px">
+    </div>
+    </legend>
+    </fieldset>
+  </section>
+
+  
+  <section id="services" class="section">
+    <fieldset> 
+    <legend>
+    <h2>Services</h2>
+    <div class="cards">
+      <div class="card"><h3>Web Development</h3><p>Responsive websites with HTML, CSS, JS.</p></div>
+      <div class="card"><h3>UI/UX Design</h3><p>User-friendly, modern interfaces.</p></div>
+      <div class="card"><h3>JavaScript ⚡</h3><p>Interactive, dynamic web apps.</p></div>
+    </div>
+     </legend>
+     </fieldset>
+  </section>
+
+  
+  <section id="skills" class="section">
+    <fieldset> 
+    <legend>
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive Design</li><li>Git & GitHub</li>
+    </ul>
+     </legend>
+     </fieldset>
+  </section>
+
+  
+  <section id="portfolio" class="section">
+    <legend>
+    <fieldset> 
+    <h2>Portfolio</h2>
+    <div class="gallery">
+      <img src="b1.jpg" alt="">
+      <img src="d.jpeg" alt="">
+      <img src="f.jpeg" alt="">
+      <img src="g.jpeg" alt="">
+      <img src="en.svg" alt="">
+      <img src="h.jpeg" alt="">
+    </div>
+     </fieldset>
+      </legend>
+  </section>
+
+  
+  <section id="contact" class="section">
+    <fieldset> 
+    <legend>
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+     </legend>
+     </fieldset>
+  </section>
+
+  
+  <footer>
+    <p></p>
+  </footer>
+  <fieldset> 
+  <legend> 
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("nav-links");
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  </script>
+  </legend>
+  </fieldset>
+</body>
+</html>
